@@ -1,15 +1,137 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-color: #DB5F3A;
+  height:125px;
+  top: 0;
 }
+
+footer {
+  background-color: #4698B3;
+  text-align: center;
+  height: 80px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+}
+
+h1 {
+  font-family: cursive;
+  text-align:center;
+  margin: 40px 0 0 130px;
+  /*
+  margin-left:30%;
+  margin-top:0;
+  padding-top:40px;
+  */
+}
+
+nav {
+  float: right;
+  margin: 80px 100px 0 0;
+}
+
+nav li {
+  display:inline;
+  margin: 3px;
+}
+
+nav a {
+  color:black;
+  margin-left: 1%;
+  padding-top:0;
+}
+
+h2 {
+  font-size:18px;
+  color:#DB5F3A;
+  text-decoration:underline;
+  text-align: center;
+}
+
+ul {
+  list-style:none;
+  width: 85%;
+}
+
+.pleaseWork {
+  float:left;
+}
+
+section {
+  width:100%;
+  height: fill;
+  float: left;
+  /*this stuff makes green section equal height to blue section. it is taken from <https://css-tricks.com/fluid-width-equal-height-columns/>. I kind of don't understand it honestly...*/ 
+  display: -webkit-flex;  
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+
+header img  {
+  border: 3px black solid;
+  border-radius: 40%;
+  width:90px;
+  height:75px;
+  margin: 25px 0 0 20px;
+}
+
+/*#icon {
+  border: 3px black solid;
+  border-radius: 40%;
+  width:90px;
+  height:75px;
+  position:relative;
+
+  margin: 3px;
+  background-image: assets/maxresdefault.jpg;
+  
+}*/
+
 
 #lyrics {
   background-color: #93AF6D;
+  float: left;
+  height: auto;
+  width:50%;
+  margin:1%;
+}
+
+#lyrics img {
+  width:100px;
+  height:100px;
+  margin: 20px;
+  float: left;
+}
+
+#lyrics p {
+  margin: 5px 5px 20px 20px;
 }
 
 #songs {
   background-color: #AEC4CB;
+  float:right;
+  width:46%;
+  height: auto;
+  margin:1%;
 }
 
-footer{
+#songs li {
+    padding: 4px;
+    border-top: 3px solid black;
+}
+
+#songs li:nth-of-type(even){
+  color:white;
   background-color: #4698B3;
 }
+
+#songs li:last-child { 
+  border-bottom: 3px solid black;
+ }
